@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
+body {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
@@ -24,8 +29,6 @@ img {
     top: 0;
     height: 100px;
     width: 100%;
-    padding-left: 15%;
-    padding-right: 15%;
 }
 
 .sticky {
