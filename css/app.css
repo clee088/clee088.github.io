@@ -1,0 +1,193 @@
+
+:root {
+    --mainBackgroundColor: #F2F2F3;
+    --bodyBackgroundColor: #F2F2F3;
+    --navBackgroundColor: #F2F2F3;
+    --mainPrimaryColor: #2F61E9;
+    --textColor: #3D3E43;
+    --secondaryTextColor: #F2F2F3;
+    --mainSecondaryColor: #D44481;
+    --accentColor: #44D4B2;
+    --borderColor: #878A92;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bodyBackgroundColor);
+}
+
+.navBar {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;   
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 7rem;
+    background-color: var(--navBackgroundColor);
+    position: fixed;
+    border-bottom: 2px solid var(--borderColor);
+}
+
+.navLinks a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--textColor);
+    position: relative;
+}
+
+.navLogo {
+    cursor: pointer;
+    margin-left: 10%;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--textColor);
+    position: relative;
+    transition: all 0.2s ease 0s;
+    background-color: var(--navBackgroundColor);
+}
+
+.navLogo:hover {
+    color: var(--mainPrimaryColor)
+}
+
+.logo {
+    width: 8rem;
+    height: auto;
+    object-fit: contain;
+    margin: 10px 10px;
+    background-color: var(--navBackgroundColor);
+}
+
+.navLinks {
+    list-style: none;
+    background-color: var(--navBackgroundColor);
+}
+
+.navLinks li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.navLinks li a {
+    transition: all 0.2s ease 0s;
+    background-color: var(--navBackgroundColor);
+}
+
+.navLinks li a:hover {
+    color: var(--mainSecondaryColor);
+}
+
+.contactButton {
+    text-decoration: none;
+    padding: 9px 25px;
+    margin: 32px;
+    margin-right: 10%;
+    background-color: var(--mainSecondaryColor);
+    border: var(--mainSecondaryColor);
+    border-style: solid;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    color: white;
+}
+
+.contactButton:hover {
+    background-color: white;
+    border: var(--mainSecondaryColor);
+    border-style: solid;
+    border-radius: 25px;
+    cursor: pointer;
+    color: var(--mainSecondaryColor);
+}
+
+.solid {
+    width: 33%;
+    border: 2px solid var(--accentColor);
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+
+.aboutMe {
+    width: 100%;
+    height: 100%;
+    padding: 10rem 10%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;  
+    color: var(--textColor);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.aboutMe .profile {
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.aboutMe .socialLinks {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    margin: 5px 20%;
+}
+
+.aboutMe .aboutText {
+    margin-left: 50px;
+}
+
+/* Cool Button Effect */
+/* .contactButton {
+    overflow: hidden;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 0 0 0 rgba(212, 68, 129, 0.5), 0 0 0 0 rgba(47, 97, 233, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    padding: 10px 25px;
+    margin: 32px;
+    z-index: 1;
+}
+
+.contactButton::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    background-color: red;
+    background-image: linear-gradient(
+        225deg,
+        var(--accentColor) 0%,
+        var(--mainPrimaryColor) 50%,
+        var(--mainSecondaryColor) 100%);
+    z-index: -1;
+    transition: transform 0.2s ease;
+}
+
+.contactButton:hover {
+    transform: translate(0, -3px);
+    box-shadow: 5px -5px 15px 0 rgba(212, 68, 129, 0.5), -5px 5px 15px 0 rgba(47, 97, 233, 0.5);
+}
+
+.contactButton:hover::after {
+    transform: rotate(150deg);
+} */
