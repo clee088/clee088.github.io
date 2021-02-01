@@ -133,6 +133,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     z-index: 0;
 }
@@ -155,9 +156,9 @@ body {
 }
 
 .aboutMe .aboutText {
-    margin: 0 50px;
+    margin: 1rem 50px;
     flex-basis: 40%;
-    flex-grow: 1;
+    flex-grow: 3;
 }
 
 .aboutProfile {
