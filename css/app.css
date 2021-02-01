@@ -131,17 +131,18 @@ body {
     font-size: 1rem;  
     color: var(--textColor);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     z-index: 0;
 }
 
 .aboutMe .profile {
-    width: 18rem;
     height: 18rem;
+    width: 18rem;
     object-fit: cover;
     border-radius: 50%;
-    margin: 2rem 3rem;
+    margin: 2rem 2rem;
     /* border: 8px solid var(--profileBorder) */
 }
 
@@ -155,6 +156,8 @@ body {
 
 .aboutMe .aboutText {
     margin: 0 50px;
+    flex-basis: 40%;
+    flex-grow: 1;
 }
 
 .aboutProfile {
