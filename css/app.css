@@ -9,6 +9,9 @@
     --mainSecondaryColor: #D44481;
     --accentColor: #44D4B2;
     --borderColor: #878A92;
+    --profileBackgroundColor: #EAEFFA;
+    --profileBorder: #55575E;
+    --profileShadow: #97ADE7;
 }
 
 * {
@@ -130,6 +133,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    z-index: 0;
 }
 
 .aboutMe .profile {
@@ -137,6 +141,8 @@ body {
     height: 18rem;
     object-fit: cover;
     border-radius: 50%;
+    margin: 2rem 3rem;
+    /* border: 8px solid var(--profileBorder) */
 }
 
 .aboutMe .socialLinks {
@@ -144,13 +150,26 @@ body {
     align-items: center;
     list-style: none;
     justify-content: space-between;
-    margin: 5px 20%;
+    margin: 2rem 20%;
 }
 
 .aboutMe .aboutText {
     margin-left: 50px;
 }
 
+.aboutProfile {
+    background: var(--profileBackgroundColor);
+    border-radius: 35px;
+    /* border: 3px solid var(--profileBorder); */
+    box-shadow: 0px 2px 15px 0 var(--profileShadow);
+}
+
+
+.instaLink:hover {
+    background: var(--bodyBackgroundColor);
+    border-radius: 10px;
+    box-shadow: -5px 5px 10px 0 rgba(245, 171, 66, 0.5), -5px -5px 10px 0 rgba(67, 64, 197, 0.5), 5px -5px 10px 0 rgba(167, 20, 165, 0.5), 5px 5px 10px 0 rgba(213, 22, 94, 0.5);
+}
 /* Cool Button Effect */
 /* .contactButton {
     overflow: hidden;
