@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 :root {
     --mainBackgroundColor: #F2F2F3;
@@ -192,55 +191,3 @@ body {
 .contactButton:hover::after {
     transform: rotate(150deg);
 } */
-=======
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-
-body {
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-h1 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 900;
-    font-size: 36px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-img {
-    height: 50px;
-    width: 50px;
-}
-
-.header {
-    margin-top: 200px;
-}
-
-.headerStyle {
-    background: rgba(255, 255, 255, 0.8);
-    position: fixed;
-    top: 0;
-    height: 100px;
-    width: 100%;
-}
-
-.sticky {
-    background: rgba(255, 100, 100, 0.8);
-    position: fixed;
-    top: 0;
-    height: 100px;
-    width: 100%;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-#intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    height: 50vh;
-}
->>>>>>> 7d01bb5a594a56a7d5ac9d7bf0d7ef23127836aa
