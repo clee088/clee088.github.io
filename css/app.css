@@ -36,10 +36,11 @@ body {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    height: 7rem;
+    height: 6rem;
     background-color: var(--navBackgroundColor);
     position: fixed;
-    border-bottom: 2px solid var(--borderColor);
+    /* border-bottom: 2px solid var(--borderColor); */
+    box-shadow: 0 0.1rem 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .navLinks a {
@@ -127,7 +128,6 @@ body {
 }
 
 /* ABOUT ME SECTION */
-
 .aboutMe {
     width: 100%;
     height: 100%;
@@ -140,10 +140,26 @@ body {
     color: var(--textColor);
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+    
     z-index: 0;
+}
+
+.aboutMe .aboutContent{
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+    /* padding-left: 20%; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;  
+    color: var(--textColor);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
 }
 
 .aboutMe .profile {
@@ -152,6 +168,7 @@ body {
     object-fit: cover;
     border-radius: 50%;
     margin: 1.5rem 1.5rem;
+    
     /* border: 8px solid var(--profileBorder) */
 }
 
@@ -165,6 +182,12 @@ body {
 
 .aboutMe .aboutText {
     margin: 1rem 2rem;
+    flex-basis: 40%;
+    flex-grow: 3;
+}
+
+.aboutMe .aboutText p{
+    margin-top: 1rem;
     flex-basis: 40%;
     flex-grow: 3;
 }
