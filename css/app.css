@@ -122,10 +122,14 @@ body {
     margin-bottom: 1rem;
 }
 
+/* ABOUT ME SECTION */
+
 .aboutMe {
     width: 100%;
     height: 100%;
-    padding: 10rem 10%;
+    padding: 10rem 18%;
+    padding-bottom: 2rem;
+    /* padding-left: 20%; */
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 1rem;  
@@ -143,7 +147,7 @@ body {
     width: 18rem;
     object-fit: cover;
     border-radius: 50%;
-    margin: 2rem 2rem;
+    margin: 1.5rem 1.5rem;
     /* border: 8px solid var(--profileBorder) */
 }
 
@@ -156,7 +160,7 @@ body {
 }
 
 .aboutMe .aboutText {
-    margin: 1rem 50px;
+    margin: 1rem 2rem;
     flex-basis: 40%;
     flex-grow: 3;
 }
@@ -168,12 +172,92 @@ body {
     box-shadow: 0px 2px 15px 0 var(--profileShadow);
 }
 
-
 .instaLink:hover {
     background: var(--bodyBackgroundColor);
     border-radius: 10px;
     box-shadow: -5px 5px 10px 0 rgba(245, 171, 66, 0.5), -5px -5px 10px 0 rgba(67, 64, 197, 0.5), 5px -5px 10px 0 rgba(167, 20, 165, 0.5), 5px 5px 10px 0 rgba(213, 22, 94, 0.5);
 }
+
+/* PROJECTS SECTION */
+
+.projects {
+    width: 100%;
+    height: 100%;
+    padding: 5rem 18%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;  
+    color: var(--textColor);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    z-index: 0;
+}
+
+.solidProject {
+    width: 16.5%;
+    border: 2px solid var(--mainPrimaryColor);
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+
+.projects .tradebot {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.projects .projectText {
+    margin: 1rem 2rem;
+    /* padding-top: 2rem; */
+    /* flex-basis: 40%;
+    flex-grow: 3; */
+}
+
+.projects .description {
+    width: 30rem;
+    padding-right: 2rem;
+}
+
+.projects .description ul {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.projects .description .githubButton {
+    text-decoration: none;
+    padding: 0.5rem 0.9rem;
+    background-color: var(--mainSecondaryColor);
+    border: var(--mainSecondaryColor);
+    border-style: solid;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    color: white;
+}
+
+.projects .description .githubButton:hover {
+    background-color: white;
+    border: var(--mainSecondaryColor);
+    border-style: solid;
+    border-radius: 25px;
+    cursor: pointer;
+    color: var(--mainSecondaryColor);
+}
+
+.projects .tradebot .image {
+    width: 20rem;
+    object-fit: contain;
+    flex-basis: 45%;
+    flex-grow: 3;
+}
+
+
+
 /* Cool Button Effect */
 /* .contactButton {
     overflow: hidden;
