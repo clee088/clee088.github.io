@@ -15,8 +15,8 @@
             <nav>
                 <ul class="navLinks">
                     <li><a href="#">About</a></li>
-                    <li><a href="/about">Projects</a></li>
-                    <li><a href="/imgs/CLEE.png">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="/resume/Christopher J. Lee Resume 2021.pdf" target=_blank>Resume</a></li>
                 </ul>
             </nav>
             <a class="contactButton" href="#">Contact</a>
@@ -44,7 +44,7 @@
             </span>
         </div>
 
-        <div class="projects">
+        <div class="projects" id="projects">
             <span class="projectText">
                 <h1>Projects</h1>
                 <hr class="solid">
@@ -60,7 +60,7 @@
                     <span class="description">
                         <p>
                             I have always been fascinated by algorithmic trading. Thus, I created
-                            a Python program that calculates buy and sell signals based on technical
+                            TradeBot, a Python program that calculates buy and sell signals based on technical
                             indicators. The program tracks one symbol and each minute, gets market data
                             from Alpaca API and adds that data to an SQLite database. Every hour, TradeBot
                             will calculate the indicators and determine if it should buy, sell, or do nothing
