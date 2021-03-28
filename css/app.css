@@ -141,16 +141,19 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: left;
-    
+    justify-content: flex-start;
     z-index: 0;
+}
+
+.aboutMe .aboutMeInfo {
+    padding-left: 0rem;
 }
 
 .aboutMe .aboutContent{
     width: 100%;
     height: 100%;
     padding-top: 1rem;
-    /* padding-left: 20%; */
+    /* margin: 0rem 2rem; */
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 1rem;  
@@ -158,7 +161,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -181,7 +184,7 @@ body {
 }
 
 .aboutMe .aboutText {
-    margin: 1rem 2rem;
+    margin: 1rem 0rem;
     flex-basis: 40%;
     flex-grow: 3;
 }
@@ -195,6 +198,7 @@ body {
     border-radius: 35px;
     /* border: 3px solid var(--profileBorder); */
     box-shadow: 0px 2px 15px 0 var(--profileShadow);
+    margin-right: 2rem;
 }
 
 .instaLink:hover {
@@ -217,7 +221,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
     z-index: 0;
 }
 
@@ -232,14 +236,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: top;
 }
 
 .projects .projectText {
-    margin: 1rem 2rem;
-    /* padding-top: 2rem; */
-    /* flex-basis: 40%;
-    flex-grow: 3; */
+    margin: 1rem 0rem;
 }
 
 .projects .description {
@@ -275,9 +277,9 @@ body {
 }
 
 .projects .tradebot .image {
-    width: 20rem;
+    width: 50%;
     object-fit: contain;
-    flex-basis: 45%;
+    flex-basis: 50%;
     flex-grow: 3;
 }
 
