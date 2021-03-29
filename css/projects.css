@@ -1,0 +1,117 @@
+/* PROJECTS SECTION */
+
+.projects {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 17%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;  
+    color: var(--textColor);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 0;
+}
+
+.solidProject {
+    width: 16.5%;
+    border: 2px solid var(--mainPrimaryColor);
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+
+.projects .projectContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.projects .projectItem {
+    width: 100%;
+    margin: 1rem 0rem;
+}
+
+.projects .description {
+    width: 30rem;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+    margin: 1rem 0;
+}
+
+.projects .description ul {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.projects .description .githubButton {
+    text-decoration: none;
+    padding: 0.5rem 0.9rem;
+    background-color: var(--mainSecondaryColor);
+    border: var(--mainSecondaryColor);
+    border-style: solid;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    color: white;
+}
+
+.projects .description .githubButton:hover {
+    background-color: white;
+    border: var(--mainSecondaryColor);
+    border-style: solid;
+    border-radius: 25px;
+    cursor: pointer;
+    color: var(--mainSecondaryColor);
+}
+
+.projects .projectContent .image {
+    width: 55%;
+    object-fit: contain;
+    flex-basis: 30%;
+    flex-grow: 3;
+}
+
+/* TremorAnalysis */
+.projects .tremorAnalysis {
+    width: 100%;
+    margin: 1rem 0rem;
+}
+
+.projects .tremorAnalysis .description {
+    width: 30rem;
+    padding-left: 2rem;
+    padding-bottom: 1.5rem;
+    margin: 1rem 0;
+    flex-basis: 30%;
+    flex-grow: 3;
+}
+
+.projects .projectContent .tremorAnalysisImage {
+    width: 20rem;
+    height: 40rem;
+    object-fit: contain;
+    margin: 1rem 0rem;
+    flex-basis: 5%;
+}
+
+.projects .projectContent .projectImages {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    margin: 1rem 0;
+}
+
+/* InvestingForAll */
+
+.projects .investingForAll {
+    width: 100%;
+    margin: 1rem 0rem;
+}
