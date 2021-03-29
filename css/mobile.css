@@ -70,6 +70,7 @@
         direction: ltr;
         overflow: scroll;
         white-space: nowrap;
+        scrollbar-color: auto var(--bodyBackgroundColor);
         padding: 2.5rem 0;
     }
 

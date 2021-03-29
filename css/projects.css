@@ -35,6 +35,7 @@
     /* width: 50%; */
     overflow: scroll;
     white-space: nowrap;
+    scrollbar-color: auto var(--bodyBackgroundColor);
     /* margin-right: -15%; */
 }
 
@@ -42,6 +43,7 @@
     /* width: 50%; */
     overflow: scroll;
     white-space: nowrap;
+    scrollbar-color: auto var(--bodyBackgroundColor);
     padding: 2.5rem 0;
     /* margin-right: -15%; */
 }
