@@ -7,8 +7,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
         <title>Christopher Lee Personal Portfolio</title>
         <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/projects.css">
     </head>
 
+    <!-- Navigation Bar -->
     <body>
         <header class="navBar">
             <a class="navLogo" href="/"><img class="logo" src="imgs/CLEE.png" alt="Chris Lee"> Chris Lee</a>
@@ -23,12 +25,14 @@
             </span>
         </header>
 
+        <!-- About Me -->
         <div class="aboutMe">
             <span class="aboutMeInfo">
                 <h1>About Me</h1>
                 <hr class="solid">
             </span>
             <span class="aboutContent">
+                <!-- About Me Card -->
                 <span class="aboutProfile">
                     <img class="profile" src="imgs/IMG_6912.JPG" alt="Profile Picture">
                     <ul class="socialLinks">
@@ -59,8 +63,10 @@
             </span>
         </div>
 
+        <!-- Projects -->
         <div class="projects" id="projects">
-            <span class="projectText">
+            <!-- Project Info -->
+            <span class="projectItem">
                 <h1>Projects</h1>
                 <hr class="solid">
                 <p>
@@ -68,10 +74,11 @@
                     prominent projects.
                 </p>
             </span>
-            <span class="projectText">
+            <!-- TradeBot -->
+            <span class="projectItem">
                 <h2>TradeBot</h2>
                 <hr class="solidProject">
-                <span class=tradebot>
+                <span class="projectContent">
                     <span class="description">
                         <p>
                             I have always been fascinated by algorithmic trading. Thus, I created
@@ -93,6 +100,68 @@
                     <img class="image" src="imgs/TradeBot/TB4.png" alt="TradeBot Picture">
                 </span>
             </span>
+
+            <!-- Tremor Analysis -->
+            <span class="tremorAnalysis">
+                <h2>TremorAnalysis</h2>
+                <hr class="solidProject">
+                <span class="projectContent">
+                    <span class="projectImages">
+                        <img class="tremorAnalysisImage" src="imgs/TremorAnalysis/Analysis.png" alt="TremorAnalysis Home">
+                        <img class="tremorAnalysisImage" src="imgs/TremorAnalysis/Settings.png" alt="TremorAnalysis Settings">
+                    </span>
+                    <span class="description">
+                        <p>
+                            TremorAnalysis is an app I started development on in June 2020.  My father, a neurologist, had
+                            always said he was searching for an app that he could use that would measure his patients'
+                            tremor frequencies.  I attempted to solve this problem by creating TremorAnalysis.  TremorAnalysis
+                            utilizes Apple's Accelerate framework in order to compute the component frequency by using Fast Fourier
+                            Transform. TremorAnalysis also uses Core Motion to gather accelerometer data.  I used SwiftUI as this is
+                            Apple's future framework and I would like to have a strong understanding of SwiftUI.
+                        </p>
+                        <ul>
+                            <li>Built with SwiftUI</li>
+                            <li>Utilizes Apple's Core Motion and Accelerate frameworks</li>
+                            <li>Performs a Fast Fourier Transform (FFT) to calculate component frequency of a tremor</li>
+                            <li>Published on TestFlight for beta testing</li>
+                        </ul>
+                        <a class="githubButton" href="https://github.com/clee088/TremorAnalysis" target=_blank>View on GitHub</a>
+                    </span>
+                </span>
+            </span>
+
+            <!-- InvestingForAll -->
+            <span class="investingForAll">
+                <h2>InvestingForAll</h2>
+                <hr class="solidProject">
+                <span class="projectContent">
+                    <span class="description">
+                        <p>
+                            InvestingForAll is my first app I developed with SwiftUI.  When I started learning the basics of investing, I was constantly searching
+                            for a simple investment app that could simulate a real portfolio, but without the risk of using real money.  This lead me to create my own app
+                            that fetched data from a stock API (IEX) and present it in a user-friendly way.
+                            I initally created InvestingForAll with Swift in 2019; however, as
+                            soon as SwiftUI was released, I immediatly recreated it with SwiftUI and expanded on its features.  InvestingForAll features
+                            an overview of market statistics such as the performance of sectors and indices.  It also provides a search feature
+                            to search for a given stock and provides the user with a detailed quote, including a chart of historical prices.  
+                            The main feature, however, was the simulated investment portfolio.  Users could buy and sell simulated stocks during market hours
+                            it would track the performance of their portfolio.
+                        </p>
+                        <ul>
+                            <li>Built with SwiftUI</li>
+                            <li>Utilizes Apple's CoreData framework to store user portfolio</li>
+                            <li>Provides a detailed view of a stock with useful statistics and a chart of histroical prices</li>
+                            <li>Features a simulated "paper trading" portfolio</li>
+                        </ul>
+                        <a class="githubButton" href="https://github.com/clee088/InvestingForAll" target=_blank>View on GitHub</a>
+                    </span>
+                    <span class="projectImages">
+                        <img class="tremorAnalysisImage" src="imgs/InvestingForAll/Portfolio.png" alt="TremorAnalysis Home">
+                        <img class="tremorAnalysisImage" src="imgs/InvestingForAll/Overview.png" alt="TremorAnalysis Settings">
+                    </span>
+                </span>
+            </span>
+            
         </div>
     </body>
 
