@@ -3,7 +3,7 @@
 .projects {
     width: 100%;
     height: 100%;
-    padding: 3rem 17%;
+    padding: 2rem 0;
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 1rem;  
@@ -25,10 +25,68 @@
 
 .projects .projectContent {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     justify-content: space-between;
-    align-items: top;
+    margin-bottom: 1rem;
+}
+
+.projects .projectContent .imageGallery {
+    /* width: 50%; */
+    overflow: scroll;
+    white-space: nowrap;
+    /* margin-right: -15%; */
+}
+
+.projects .projectContent .imageGalleryIphone {
+    /* width: 50%; */
+    overflow: scroll;
+    white-space: nowrap;
+    padding: 2.5rem 0;
+    /* margin-right: -15%; */
+}
+
+.projects .projectContent .imageGallery .image {
+    /* max-width: 100%; */
+    height: auto;
+    object-fit: contain;
+    /* flex-basis: 50rem; */
+    /* flex-grow: 3; */
+}
+
+.projects .projectContent .imageGallery .imageView {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.projects .projectContent .imageGallery .imageView .imageText {
+    margin-left: 3.5rem;
+    margin-top: -2.5rem;
+}
+
+.projects .projectContent .imageGalleryIphone .imageView {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: left;
+    width: 20rem;
+    height: 40rem;
+    object-fit: contain;
+    margin: 1rem 1rem;
+}
+
+.projects .projectContent .imageGalleryIphone .imageView .imageText {
+    margin-top: 1rem;
+}
+
+.projects .projectContent .imageGalleryIphone .image {
+    /* max-width: 100%; */
+    height: auto;
+    object-fit: contain;
+    /* flex-basis: 50rem; */
+    /* flex-grow: 3; */
 }
 
 .projects .projectItem {
@@ -36,8 +94,9 @@
     margin: 1rem 0rem;
 }
 
+
 .projects .description {
-    width: 30rem;
+    max-width: 40%;
     padding-right: 2rem;
     padding-bottom: 1.5rem;
     margin: 1rem 0;
@@ -59,6 +118,20 @@
     cursor: pointer;
     transition: all 0.2s ease 0s;
     color: white;
+    float: left;
+}
+
+.projects .projectItemEven .description .githubButton {
+    text-decoration: none;
+    padding: 0.5rem 0.9rem;
+    background-color: var(--mainSecondaryColor);
+    border: var(--mainSecondaryColor);
+    border-style: solid;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    color: white;
+    float: right;
 }
 
 .projects .description .githubButton:hover {
@@ -70,26 +143,36 @@
     color: var(--mainSecondaryColor);
 }
 
-.projects .projectContent .image {
-    width: 55%;
-    object-fit: contain;
-    flex-basis: 30%;
-    flex-grow: 3;
-}
-
 /* TremorAnalysis */
-.projects .tremorAnalysis {
+.projects .projectItemEven {
     width: 100%;
     margin: 1rem 0rem;
 }
 
-.projects .tremorAnalysis .description {
-    width: 30rem;
+.projects .projectItemEven .projectContent {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    margin-bottom: 1rem;
+}
+
+.projects .projectItemEven .projectContent .imageGalleryIphone {
+    /* width: 50%; */
+    direction: rtl;
+    overflow: scroll;
+    white-space: nowrap;
+    padding: 2.5rem 0;
+    /* margin-right: -15%; */
+}
+
+.projects .projectItemEven .description {
+    max-width: 40%;
     padding-left: 2rem;
+    padding-right: 0;
     padding-bottom: 1.5rem;
     margin: 1rem 0;
-    flex-basis: 30%;
-    flex-grow: 3;
 }
 
 .projects .projectContent .tremorAnalysisImage {

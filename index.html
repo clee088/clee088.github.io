@@ -7,160 +7,214 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
         <title>Christopher Lee Personal Portfolio</title>
         <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/navigation-bar.css">
         <link rel="stylesheet" href="css/projects.css">
+        <link rel="stylesheet" href="css/mobile.css">
     </head>
 
-    <!-- Navigation Bar -->
+    <!-- Website Content -->
     <body>
+        <!-- Navigation Bar -->
         <header class="navBar">
             <a class="navLogo" href="/"><img class="logo" src="imgs/CLEE.png" alt="Chris Lee"> Chris Lee</a>
-            <nav>
-                <ul class="navLinks">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="/resume/Christopher J. Lee Resume 2021.pdf" target=_blank>Resume</a></li>
-                </ul>
+            <nav class=navigationLinks>
+                <a class=link href="#">About</a>
+                <a class=link href="#projects">Projects</a>
+                <a class=link href="/resume/Christopher J. Lee Resume 2021.pdf" target=_blank>Resume</a>
             </nav>
             <a class="contactButton" href="#">Contact</a>
-            </span>
         </header>
 
-        <!-- About Me -->
-        <div class="aboutMe">
-            <span class="aboutMeInfo">
-                <h1>About Me</h1>
-                <hr class="solid">
-            </span>
-            <span class="aboutContent">
-                <!-- About Me Card -->
-                <span class="aboutProfile">
-                    <img class="profile" src="imgs/IMG_6912.JPG" alt="Profile Picture">
-                    <ul class="socialLinks">
-                        <li><a href="https://github.com/clee088" target=_blank><img src="imgs/socials/github(24x24)@3x.png"
-                                    alt="github"></a></li>
-                        <li><a href="https://www.linkedin.com/in/christopherlee08/" target=_blank><img
-                                    src="imgs/socials/linkedin(24x24)@3x.png" alt="linkedIn"></a></li>
-                        <li><a href="https://www.instagram.com/chris.lee08/?hl=en" target=_blank><img class="instaLink"
-                                    src="imgs/socials/instagram(24x24)@3x.png" alt="insta"></a></li>
-                    </ul>
-                </span>
-                <span class="aboutText">
-                    Hi, my name is <h3 style="display:inline;">Christopher Lee</h3>!
+        <div class="content">
+            <!-- About Me -->
+            <div class="aboutMe">
+                <header class="aboutMeInfo">
+                    <h1>About Me</h1>
+                    <hr class="solid">
+                </header>
+                <div class="aboutContent">
+                    <!-- About Me Card -->
+                    <span class="aboutProfile">
+                        <img class="profile" src="imgs/IMG_6912.JPG" alt="Profile Picture">
+                        <ul class="socialLinks">
+                            <li><a href="https://github.com/clee088" target=_blank><img src="imgs/socials/github(24x24)@3x.png"
+                                        alt="github"></a></li>
+                            <li><a href="https://www.linkedin.com/in/christopherlee08/" target=_blank><img
+                                        src="imgs/socials/linkedin(24x24)@3x.png" alt="linkedIn"></a></li>
+                            <li><a href="https://www.instagram.com/chris.lee08/?hl=en" target=_blank><img class="instaLink"
+                                        src="imgs/socials/instagram(24x24)@3x.png" alt="insta"></a></li>
+                        </ul>
+                    </span>
+
+                    <span class="aboutText">
+                        Hi, my name is <h3 style="display:inline;">Christopher Lee</h3>!
+                        <p>
+                            I am currently a first-year student at Kenyon College pursuing a bachelor's degree, intending to major
+                            in
+                            Economics with
+                            a Scientific Computing concentration. Passions of mine include software development, machine learning,
+                            algorithmic
+                            trading, and investment portfolio management.
+                        </p>
+            
+                        <p>
+                            In my free time, I enjoy programming Python projects or developing iOS apps with Swift. I also
+                            activley manage my personal investment portfolio and analyze companies to invest in with financial and
+                            technical analysis.
+                        </p>
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Projects -->
+            <div class="projects" id="projects">
+                <!-- Project Info -->
+                <span class="projectItem">
+                    <header>
+                        <h1>Projects</h1>
+                        <hr class="solid">
+                    </header>
                     <p>
-                        I am currently a first-year student at Kenyon College pursuing a bachelor's degree, intending to major in
-                        Economics with
-                        a Scientific Computing concentration. Passions of mine include software development, machine learning,
-                        algorithmic
-                        trading, and investment portfolio management.
-                    </p>
-                    
-                    <p>
-                        In my free time, I enjoy programming Python projects or developing iOS apps with Swift.  I also
-                        activley manage my personal investment portfolio and analyze companies to invest in with financial and 
-                        technical analysis.
+                        I have worked on many small personal projects throughout my journey as a self-taught programmer. Here are
+                        some of my most relevant and
+                        prominent projects.
                     </p>
                 </span>
-            </span>
+                <!-- TradeBot -->
+                <div class="projectItem">
+                    <header>
+                        <h2>TradeBot</h2>
+                        <hr class="solidProject">
+                    </header>
+                    <div class="projectContent">
+                        <span class="description">
+                            <p>
+                                I have always been fascinated by algorithmic trading. Thus, I created
+                                TradeBot, a Python program that calculates buy and sell signals based on technical
+                                indicators. The program tracks one symbol and each minute, gets market data
+                                from Alpaca API and adds that data to an SQLite database. Every hour, TradeBot
+                                will calculate the indicators and determine if it should buy, sell, or do nothing
+                                based on certain criteria.
+                            </p>
+                            <ul>
+                                <li>Built with Python3</li>
+                                <li>Stores data using SQLite3</li>
+                                <li>Automatically places trades using Alpaca API</li>
+                                <li>Easy to use and run on a cloud server</li>
+                            </ul>
+                            <a class="githubButton" href="https://github.com/clee088/TradeBot" target=_blank>View on GitHub</a>
+            
+                        </span>
+                        <div class="imageGallery">
+                            <span class="imageView">
+                                <img class="image" src="imgs/TradeBot/TB4.png" alt="TradeBot Picture">
+                                <span class="imageText">Image 1/4</span>
+                            </span>
+                            <span class="imageView">
+                                <img class="image" src="imgs/TradeBot/Help1.png" alt="TradeBot Picture">
+                                <span class="imageText">Image 2/4</span>
+                            </span>
+                            <span class="imageView">
+                                <img class="image" src="imgs/TradeBot/Help2.png" alt="TradeBot Picture">
+                                <span class="imageText">Image 3/4</span>
+                            </span>
+                            <span class="imageView">
+                                <img class="image" src="imgs/TradeBot/Chart.png" alt="TradeBot Picture">
+                                <span class="imageText">Image 4/4</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Tremor Analysis -->
+                <span class="projectItemEven">
+                    <header>
+                        <h2>TremorAnalysis</h2>
+                        <hr class="solidProject">
+                    </header>
+                    <span class="projectContent">
+                        <div class="imageGalleryIphone">
+                            <span class="imageView">
+                                <img class="image" src="imgs/TremorAnalysis/Analysis.png" alt="TremorAnalysis Home">
+                                <span class="imageText">Image 1/3</span>
+                            </span>
+                            <span class="imageView">
+                                <img class="image" src="imgs/TremorAnalysis/Settings.png" alt="TremorAnalysis Settings">
+                                <span class="imageText">Image 2/3</span>
+                            </span>
+                            <span class="imageView">
+                                <img class="image" src="imgs/TremorAnalysis/Features.png" alt="TremorAnalysis Home">
+                                <span class="imageText">Image 3/3</span>
+                            </span>
+                        </div>
+                        <span class="description">
+                            <p>
+                                TremorAnalysis is an app I started development on in June 2020. My father, a neurologist, had
+                                always said he was searching for an app that he could use that would measure his patients'
+                                tremor frequencies. I attempted to solve this problem by creating TremorAnalysis. TremorAnalysis
+                                utilizes Apple's Accelerate framework in order to compute the component frequency by using Fast
+                                Fourier
+                                Transform. TremorAnalysis also uses Core Motion to gather accelerometer data. I used SwiftUI as this
+                                is
+                                Apple's future framework and I would like to have a strong understanding of SwiftUI.
+                            </p>
+                            <ul>
+                                <li>Built with SwiftUI</li>
+                                <li>Utilizes Apple's Core Motion and Accelerate frameworks</li>
+                                <li>Performs a Fast Fourier Transform (FFT) to calculate component frequency of a tremor</li>
+                                <li>Published on TestFlight for beta testing</li>
+                            </ul>
+                            <a class="githubButton" href="https://github.com/clee088/TremorAnalysis" target=_blank>View on
+                                GitHub</a>
+                        </span>
+                    </span>
+                </span>
+            
+                <!-- InvestingForAll -->
+                <span class="investingForAll">
+                    <h2>InvestingForAll</h2>
+                    <hr class="solidProject">
+                    <span class="projectContent">
+                        <span class="description">
+                            <p>
+                                InvestingForAll is my first app I developed with SwiftUI. When I started learning the basics of
+                                investing, I was constantly searching
+                                for a simple investment app that could simulate a real portfolio, but without the risk of using real
+                                money. This lead me to create my own app
+                                that fetched data from a stock API (IEX) and present it in a user-friendly way.
+                                I initally created InvestingForAll with Swift in 2019; however, as
+                                soon as SwiftUI was released, I immediatly recreated it with SwiftUI and expanded on its features.
+                                InvestingForAll features
+                                an overview of market statistics such as the performance of sectors and indices. It also provides a
+                                search feature
+                                to search for a given stock and provides the user with a detailed quote, including a chart of
+                                historical prices.
+                                The main feature, however, was the simulated investment portfolio. Users could buy and sell
+                                simulated stocks during market hours
+                                it would track the performance of their portfolio.
+                            </p>
+                            <ul>
+                                <li>Built with SwiftUI</li>
+                                <li>Utilizes Apple's CoreData framework to store user's simulated portfolio</li>
+                                <li>Provides a detailed view of a stock with useful statistics and a chart of histroical prices</li>
+                                <li>Features a simulated "paper trading" portfolio</li>
+                            </ul>
+                            <a class="githubButton" href="https://github.com/clee088/InvestingForAll" target=_blank>View on
+                                GitHub</a>
+                        </span>
+                        <div class="imageGalleryIphone">
+                            <span class="imageView">
+                                <img class="image" src="imgs/InvestingForAll/Portfolio.png" alt="TremorAnalysis Home">
+                                <span class="imageText">Image 1/2</span>
+                            </span>
+                            <span class="imageView">
+                                <img class="image" src="imgs/InvestingForAll/Overview.png" alt="TremorAnalysis Settings">
+                                <span class="imageText">Image 2/2</span>
+                            </span>
+                        </div>
+                    </span>
+                </span>
         </div>
-
-        <!-- Projects -->
-        <div class="projects" id="projects">
-            <!-- Project Info -->
-            <span class="projectItem">
-                <h1>Projects</h1>
-                <hr class="solid">
-                <p>
-                    I have worked on many small personal projects throughout my journey as a self-taught programmer.  Here are some of my most relevant and
-                    prominent projects.
-                </p>
-            </span>
-            <!-- TradeBot -->
-            <span class="projectItem">
-                <h2>TradeBot</h2>
-                <hr class="solidProject">
-                <span class="projectContent">
-                    <span class="description">
-                        <p>
-                            I have always been fascinated by algorithmic trading. Thus, I created
-                            TradeBot, a Python program that calculates buy and sell signals based on technical
-                            indicators. The program tracks one symbol and each minute, gets market data
-                            from Alpaca API and adds that data to an SQLite database. Every hour, TradeBot
-                            will calculate the indicators and determine if it should buy, sell, or do nothing
-                            based on certain criteria.
-                        </p>
-                        <ul>
-                            <li>Built with Python3</li>
-                            <li>Stores data using SQLite3</li>
-                            <li>Automatically places trades using Alpaca API</li>
-                            <li>Easy to use and run on a cloud server</li>
-                        </ul>
-                        <a class="githubButton" href="https://github.com/clee088/TradeBot" target=_blank>View on GitHub</a>
-
-                    </span>
-                    <img class="image" src="imgs/TradeBot/TB4.png" alt="TradeBot Picture">
-                </span>
-            </span>
-
-            <!-- Tremor Analysis -->
-            <span class="tremorAnalysis">
-                <h2>TremorAnalysis</h2>
-                <hr class="solidProject">
-                <span class="projectContent">
-                    <span class="projectImages">
-                        <img class="tremorAnalysisImage" src="imgs/TremorAnalysis/Analysis.png" alt="TremorAnalysis Home">
-                        <img class="tremorAnalysisImage" src="imgs/TremorAnalysis/Settings.png" alt="TremorAnalysis Settings">
-                    </span>
-                    <span class="description">
-                        <p>
-                            TremorAnalysis is an app I started development on in June 2020.  My father, a neurologist, had
-                            always said he was searching for an app that he could use that would measure his patients'
-                            tremor frequencies.  I attempted to solve this problem by creating TremorAnalysis.  TremorAnalysis
-                            utilizes Apple's Accelerate framework in order to compute the component frequency by using Fast Fourier
-                            Transform. TremorAnalysis also uses Core Motion to gather accelerometer data.  I used SwiftUI as this is
-                            Apple's future framework and I would like to have a strong understanding of SwiftUI.
-                        </p>
-                        <ul>
-                            <li>Built with SwiftUI</li>
-                            <li>Utilizes Apple's Core Motion and Accelerate frameworks</li>
-                            <li>Performs a Fast Fourier Transform (FFT) to calculate component frequency of a tremor</li>
-                            <li>Published on TestFlight for beta testing</li>
-                        </ul>
-                        <a class="githubButton" href="https://github.com/clee088/TremorAnalysis" target=_blank>View on GitHub</a>
-                    </span>
-                </span>
-            </span>
-
-            <!-- InvestingForAll -->
-            <span class="investingForAll">
-                <h2>InvestingForAll</h2>
-                <hr class="solidProject">
-                <span class="projectContent">
-                    <span class="description">
-                        <p>
-                            InvestingForAll is my first app I developed with SwiftUI.  When I started learning the basics of investing, I was constantly searching
-                            for a simple investment app that could simulate a real portfolio, but without the risk of using real money.  This lead me to create my own app
-                            that fetched data from a stock API (IEX) and present it in a user-friendly way.
-                            I initally created InvestingForAll with Swift in 2019; however, as
-                            soon as SwiftUI was released, I immediatly recreated it with SwiftUI and expanded on its features.  InvestingForAll features
-                            an overview of market statistics such as the performance of sectors and indices.  It also provides a search feature
-                            to search for a given stock and provides the user with a detailed quote, including a chart of historical prices.  
-                            The main feature, however, was the simulated investment portfolio.  Users could buy and sell simulated stocks during market hours
-                            it would track the performance of their portfolio.
-                        </p>
-                        <ul>
-                            <li>Built with SwiftUI</li>
-                            <li>Utilizes Apple's CoreData framework to store user's simulated portfolio</li>
-                            <li>Provides a detailed view of a stock with useful statistics and a chart of histroical prices</li>
-                            <li>Features a simulated "paper trading" portfolio</li>
-                        </ul>
-                        <a class="githubButton" href="https://github.com/clee088/InvestingForAll" target=_blank>View on GitHub</a>
-                    </span>
-                    <span class="projectImages">
-                        <img class="tremorAnalysisImage" src="imgs/InvestingForAll/Portfolio.png" alt="TremorAnalysis Home">
-                        <img class="tremorAnalysisImage" src="imgs/InvestingForAll/Overview.png" alt="TremorAnalysis Settings">
-                    </span>
-                </span>
-            </span>
             
         </div>
     </body>

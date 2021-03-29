@@ -28,96 +28,8 @@ body {
     background-color: var(--bodyBackgroundColor);
 }
 
-.navBar {
-    font-family: 'Poppins', sans-serif;
-    font-weight: normal;
-    font-size: 1rem;   
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    height: 6rem;
-    background-color: var(--navBackgroundColor);
-    position: fixed;
-    /* border-bottom: 2px solid var(--borderColor); */
-    box-shadow: 0 0.1rem 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.navLinks a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--textColor);
-    position: relative;
-}
-
-.navLogo {
-    cursor: pointer;
-    margin-left: 10%;
-    margin-right: auto;
-    font-weight: bold;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--textColor);
-    position: relative;
-    transition: all 0.2s ease 0s;
-    background-color: var(--navBackgroundColor);
-}
-
-.navLogo:hover {
-    color: var(--mainPrimaryColor)
-}
-
-.logo {
-    width: 8rem;
-    height: auto;
-    object-fit: contain;
-    margin: 10px 10px;
-    background-color: var(--navBackgroundColor);
-}
-
-.navLinks {
-    list-style: none;
-    background-color: var(--navBackgroundColor);
-}
-
-.navLinks li {
-    display: inline-block;
-    margin: 0px 30px;
-}
-
-.navLinks li a {
-    transition: all 0.2s ease 0s;
-    background-color: var(--navBackgroundColor);
-}
-
-.navLinks li a:hover {
-    color: var(--mainSecondaryColor);
-}
-
-.contactButton {
-    text-decoration: none;
-    padding: 9px 25px;
-    margin: 32px;
-    margin-right: 10%;
-    background-color: var(--mainSecondaryColor);
-    border: var(--mainSecondaryColor);
-    border-style: solid;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.2s ease 0s;
-    color: white;
-}
-
-.contactButton:hover {
-    background-color: white;
-    border: var(--mainSecondaryColor);
-    border-style: solid;
-    border-radius: 25px;
-    cursor: pointer;
-    color: var(--mainSecondaryColor);
+.content {
+    margin: 0 11%;
 }
 
 .solid {
@@ -131,7 +43,7 @@ body {
 .aboutMe {
     width: 100%;
     height: 100%;
-    padding: 10rem 17%;
+    padding: 7rem 0;
     padding-bottom: 2rem;
     /* padding-left: 20%; */
     font-family: 'Poppins', sans-serif;
@@ -166,12 +78,12 @@ body {
 }
 
 .aboutMe .profile {
-    height: 18rem;
-    width: 18rem;
+    height: 14rem;
+    width: 14rem;
     object-fit: cover;
     border-radius: 50%;
     margin: 1.5rem 1.5rem;
-    
+    margin-bottom: 0;
     /* border: 8px solid var(--profileBorder) */
 }
 
@@ -180,7 +92,8 @@ body {
     align-items: center;
     list-style: none;
     justify-content: space-between;
-    margin: 2rem 20%;
+    margin: 1rem 20%;
+    margin-bottom: 1.5rem;
 }
 
 .aboutMe .aboutText {
@@ -189,7 +102,7 @@ body {
     flex-grow: 3;
 }
 
-.aboutMe .aboutText p{
+.aboutMe .aboutText p {
     margin-top: 1rem;
 }
 
