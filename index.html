@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/navigation-bar.css">
         <link rel="stylesheet" href="css/projects.css">
         <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/image-carousel.css">
     </head>
 
     <!-- Website Content -->
@@ -106,23 +107,29 @@
                             <a class="githubButton" href="https://github.com/clee088/TradeBot" target=_blank>View on GitHub</a>
             
                         </span>
-                        <div class="imageGallery">
-                            <span class="imageView">
-                                <img class="image" src="imgs/TradeBot/TB4.png" alt="TradeBot Picture">
-                                <span class="imageText">Image 1/4</span>
-                            </span>
-                            <span class="imageView">
-                                <img class="image" src="imgs/TradeBot/Help1.png" alt="TradeBot Picture">
-                                <span class="imageText">Image 2/4</span>
-                            </span>
-                            <span class="imageView">
-                                <img class="image" src="imgs/TradeBot/Help2.png" alt="TradeBot Picture">
-                                <span class="imageText">Image 3/4</span>
-                            </span>
-                            <span class="imageView">
-                                <img class="image" src="imgs/TradeBot/Chart.png" alt="TradeBot Picture">
-                                <span class="imageText">Image 4/4</span>
-                            </span>
+                        <div class="carousel">
+                            <div class="image_carousel">
+                                <a class="c_button" onclick="changeSlides(-1,0)">&#10094;</a>
+                                <div class="slide1">
+                                    <img class="c_image" src="imgs/TradeBot/Demo.png" alt="TradeBot Demo">
+                                </div>
+                                <div class="slide1">
+                                    <img class="c_image" src="imgs/TradeBot/Help1.png" alt="TradeBot Help1">
+                                </div>
+                                <div class="slide1">
+                                    <img class="c_image" src="imgs/TradeBot/Help2.png" alt="TradeBot Help2">
+                                </div>
+                                <div class="slide1">
+                                    <img class="c_image" src="imgs/TradeBot/Chart.png" alt="TradeBot Chart">
+                                </div>
+                                <a class="c_button" onclick="changeSlides(1,0)">&#10095;</a>
+                            </div>
+                            <div class="carousel_dots">
+                                <span class="c_dot1" onclick="changeSlideDirect(1,0)"></span>
+                                <span class="c_dot1" onclick="changeSlideDirect(2,0)"></span>
+                                <span class="c_dot1" onclick="changeSlideDirect(3,0)"></span>
+                                <span class="c_dot1" onclick="changeSlideDirect(4,0)"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -134,19 +141,28 @@
                         <hr class="solidProject">
                     </header>
                     <span class="projectContent">
-                        <div class="imageGalleryIphone">
-                            <span class="imageView">
-                                <img class="image" src="imgs/TremorAnalysis/Analysis.png" alt="TremorAnalysis Home">
-                                <span class="imageText">Image 1/3</span>
-                            </span>
-                            <span class="imageView">
-                                <img class="image" src="imgs/TremorAnalysis/Settings.png" alt="TremorAnalysis Settings">
-                                <span class="imageText">Image 2/3</span>
-                            </span>
-                            <span class="imageView">
-                                <img class="image" src="imgs/TremorAnalysis/Features.png" alt="TremorAnalysis Home">
-                                <span class="imageText">Image 3/3</span>
-                            </span>
+                        <div class="carousel">
+                            <div class="image_carousel">
+                                <a class="c_button" onclick="changeSlides(-1,1)">&#10094;</a>
+                                <div class="slide2">
+                                    <img class="c_image" src="imgs/TremorAnalysis/Analysis.png" alt="TremorAnalysis Analysis">
+                                    <img class="c_image" src="imgs/TremorAnalysis/Settings.png" alt="TremorAnalysis Settings">
+                                </div>
+                                <div class="slide2">
+                                    <img class="c_image" src="imgs/TremorAnalysis/Settings.png" alt="TremorAnalysis Settings">
+                                    <img class="c_image" src="imgs/TremorAnalysis/Features.png" alt="TremorAnalysis Features">
+                                </div>
+                                <div class="slide2">
+                                    <img class="c_image" src="imgs/TremorAnalysis/Features.png" alt="TremorAnalysis Features">
+                                    <img class="c_image" src="imgs/TremorAnalysis/Analysis.png" alt="TremorAnalysis Analysis">
+                                </div>
+                                <a class="c_button" onclick="changeSlides(1,1)">&#10095;</a>
+                            </div>
+                            <div class="carousel_dots">
+                                <span class="c_dot2" onclick="changeSlideDirect(1,1)"></span>
+                                <span class="c_dot2" onclick="changeSlideDirect(2,1)"></span>
+                                <span class="c_dot2" onclick="changeSlideDirect(3,1)"></span>
+                            </div>
                         </div>
                         <span class="description">
                             <p>
@@ -203,15 +219,18 @@
                             <a class="githubButton" href="https://github.com/clee088/InvestingForAll" target=_blank>View on
                                 GitHub</a>
                         </span>
-                        <div class="imageGalleryIphone">
-                            <span class="imageView">
-                                <img class="image" src="imgs/InvestingForAll/Portfolio.png" alt="TremorAnalysis Home">
-                                <span class="imageText">Image 1/2</span>
-                            </span>
-                            <span class="imageView">
-                                <img class="image" src="imgs/InvestingForAll/Overview.png" alt="TremorAnalysis Settings">
-                                <span class="imageText">Image 2/2</span>
-                            </span>
+                        <div class="carousel">
+                            <div class="image_carousel">
+                                <a class="c_button" onclick="changeSlides(-1,2)">&#10094;</a>
+                                <div class="slide3">
+                                    <img class="c_image" src="imgs/InvestingForAll/Portfolio.png" alt="InvestingForAll Portfolio">
+                                    <img class="c_image" src="imgs/InvestingForAll/Overview.png" alt="InvestingForAll Overview">
+                                </div>
+                                <a class="c_button" onclick="changeSlides(1,2)">&#10095;</a>
+                            </div>
+                            <div class="carousel_dots">
+                                <span class="c_dot3" onclick="changeSlideDirect(1,2)"></span>
+                            </div>
                         </div>
                     </span>
                 </span>
@@ -219,5 +238,7 @@
             
         </div>
     </body>
+
+    <script src="js/image-carousel.js"></script>
 
 </html>

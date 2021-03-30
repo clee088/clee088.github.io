@@ -1,0 +1,107 @@
+.image_carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c_image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.c_button {
+    cursor: pointer;
+    padding: 0 0.5rem;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--mainSecondaryColor)
+}
+
+.c_button:hover {
+    color: var(--accentColor);
+    transition: 0.2s ease;
+}
+
+.carousel_dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* TradeBot */
+.image_carousel .slide1 {
+    display: none;
+}
+
+.c_dot1 {
+    cursor: pointer;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: var(--textColor);
+    display: inline-block;
+    margin: 0 0.1rem;
+    border-radius: 50%;
+}
+
+.c_dot1.active, .c_dot1:hover {
+    background-color: var(--mainSecondaryColor);
+    transition: 0.1s ease;
+}
+
+/* TremorAnalysis */
+.image_carousel .slide2 {
+    display: none;
+    justify-content: center;
+}
+
+.image_carousel .slide2 img {
+    margin: 1rem 1rem;
+    object-fit: contain;
+    max-height: auto;
+    max-width: 40%;
+}
+
+.c_dot2 {
+    cursor: pointer;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: var(--textColor);
+    display: inline-block;
+    margin: 0 0.1rem;
+    border-radius: 50%;
+}
+
+.c_dot2.active, .c_dot2:hover {
+    background-color: var(--mainSecondaryColor);
+}
+
+/* InvestingForAll */
+.image_carousel .slide3 {
+    display: none;
+    justify-content: center;
+}
+
+.image_carousel .slide3 img {
+    margin: 1rem 1rem;
+    object-fit: contain;
+    max-height: auto;
+    max-width: 40%;
+}
+
+.c_dot3 {
+    cursor: pointer;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: var(--textColor);
+    display: inline-block;
+    margin: 0 0.1rem;
+    border-radius: 50%;
+}
+
+.c_dot3.active, .c_dot3:hover {
+    background-color: var(--mainSecondaryColor);
+}
