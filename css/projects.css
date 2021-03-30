@@ -31,11 +31,22 @@
     margin-bottom: 1rem;
 }
 
+.projects .projectContent ::-webkit-scrollbar {
+    display: none;
+}
+
+/* .projects .projectContent ::-webkit-scrollbar-track {
+    background: var(--bodyBackgroundColor)
+}
+
+.projects .projectContent ::-webkit-scrollbar-thumb {
+    background: var(--mainSecondaryColor)
+} */
+
 .projects .projectContent .imageGallery {
     /* width: 50%; */
     overflow: scroll;
     white-space: nowrap;
-    scrollbar-color: auto var(--bodyBackgroundColor);
     /* margin-right: -15%; */
 }
 
@@ -43,7 +54,6 @@
     /* width: 50%; */
     overflow: scroll;
     white-space: nowrap;
-    scrollbar-color: auto var(--bodyBackgroundColor);
     padding: 2.5rem 0;
     /* margin-right: -15%; */
 }
