@@ -161,6 +161,12 @@
     margin: 1rem 0rem;
 }
 
+.projects .projectItemEven header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .projects .projectItemEven .projectContent {
     display: flex;
     /* flex-wrap: wrap; */
