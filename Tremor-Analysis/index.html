@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <title>Tremor Analysis</title>
+        <link rel="icon" href="../imgs/CLEE.png">
+        <link rel="stylesheet" href="../css/app.css">
+        <link rel="stylesheet" href="../css/navigation-bar.css">
+        <link rel="stylesheet" href="../css/projects.css">
+        <link rel="stylesheet" href="../css/mobile.css">
+        <link rel="stylesheet" href="../css/image-carousel.css">
+        <link rel="stylesheet" href="../css/tremor-analysis.css">
+    </head>
+
+    <!-- Website Content -->
+    <body onload="changeSlideDirect(1,1)">
+        <!-- Navigation Bar -->
+        <header class="navBar">
+            <a class="navLogo" href="/Tremor-Analysis/"><img class="logo" src="../imgs/CLEE.png" alt="Chris Lee"> Tremor Analysis </a>
+            <nav class=navigationLinks>
+                <a class=link href="/Tremor-Analysis/">Home</a>
+                <a class=link href="/Tremor-Analysis/privacy-policy">Privacy Policy</a>
+            </nav>
+            <a class="contactButton" href="mailto:clee.dev08@gmail.com">Contact</a>
+        </header>
+
+        <div class="content">
+            <div class="projects" id="projects">
+                <!-- Tremor Analysis -->
+                <span class="projectItemEven">
+                    <header>
+                        <h2>TremorAnalysis</h2>
+                        <hr class="solidProject">
+                    </header>
+                    <span class="projectContent">
+                        <div class="carousel">
+                            <div class="image_carousel">
+                                <a class="c_button" onclick="changeSlides(-1,1)">&#10094;</a>
+                                <div class="slide2">
+                                    <img class="c_image" src="/imgs/TremorAnalysis/Analysis.png" alt="TremorAnalysis Analysis">
+                                    <img class="c_image" src="../imgs/TremorAnalysis/Settings.png" alt="TremorAnalysis Settings">
+                                </div>
+                                <div class="slide2">
+                                    <img class="c_image" src="/imgs/TremorAnalysis/Settings.png" alt="TremorAnalysis Settings">
+                                    <img class="c_image" src="/imgs/TremorAnalysis/Features.png" alt="TremorAnalysis Features">
+                                </div>
+                                <div class="slide2">
+                                    <img class="c_image" src="/imgs/TremorAnalysis/Features.png" alt="TremorAnalysis Features">
+                                    <img class="c_image" src="/imgs/TremorAnalysis/Analysis.png" alt="TremorAnalysis Analysis">
+                                </div>
+                                <a class="c_button" onclick="changeSlides(1,1)">&#10095;</a>
+                            </div>
+                            <div class="carousel_dots">
+                                <span class="c_dot2" onclick="changeSlideDirect(1,1)"></span>
+                                <span class="c_dot2" onclick="changeSlideDirect(2,1)"></span>
+                                <span class="c_dot2" onclick="changeSlideDirect(3,1)"></span>
+                            </div>
+                        </div>
+                        <span class="description">
+                            <p>
+                                TremorAnalysis is an app I started development on in June 2020. My father, a neurologist, had
+                                always said he was searching for an app that he could use that would measure his patients'
+                                tremor frequencies. I attempted to solve this problem by creating TremorAnalysis. TremorAnalysis
+                                utilizes Apple's Accelerate framework in order to compute the component frequency by using Fast
+                                Fourier
+                                Transform. TremorAnalysis also uses Core Motion to gather accelerometer data. I used SwiftUI as this
+                                is
+                                Apple's future framework and I would like to have a strong understanding of SwiftUI.
+                            </p>
+                            <ul>
+                                <li>Built with SwiftUI</li>
+                                <li>Utilizes Apple's Core Motion and Accelerate frameworks</li>
+                                <li>Performs a Fast Fourier Transform (FFT) to calculate component frequency of a tremor</li>
+                                <li>Published on TestFlight for beta testing</li>
+                            </ul>
+                            <a class="githubButton" href="https://github.com/clee088/TremorAnalysis" target=_blank>View on
+                                GitHub</a>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </body>
+    <script src="../js/image-carousel.js"></script>
+</html>

@@ -1,0 +1,21 @@
+/* Tremor Analysis */
+
+.content {
+    margin: 0 11%;
+}
+
+.privacyPolicy {
+    width: 100%;
+    height: 100%;
+    padding: 7rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;  
+    color: var(--textColor);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 0;
+}

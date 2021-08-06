@@ -123,6 +123,7 @@
 .projects .description .githubButton {
     text-decoration: none;
     padding: 0.5rem 0.9rem;
+    /* margin: 0.5rem; */
     background-color: var(--mainSecondaryColor);
     border: var(--mainSecondaryColor);
     border-style: solid;
