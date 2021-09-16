@@ -19,3 +19,28 @@
     align-items: flex-start;
     z-index: 0;
 }
+
+.roadmap {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: var(--textColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+.roadmap h1 {
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+.roadmap li {
+    padding: 0.2rem 0;
+}
+
+.indented {
+    margin-left: 1rem;
+}
