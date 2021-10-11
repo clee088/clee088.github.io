@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fe258bcc-8570-4f9d-a9dd-ca1b93bf40ff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tremor-Analysis/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tremor-Analysis/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/tremor-analysis.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/tremor-analysis.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +44,9 @@
       <option name="presentableId" value="Default" />
       <updated>1631801257378</updated>
       <workItem from="1631801262894" duration="447000" />
-      <workItem from="1631810421513" duration="4791000" />
+      <workItem from="1631810421513" duration="7148000" />
+      <workItem from="1633630426240" duration="2000" />
+      <workItem from="1633919681252" duration="49000" />
     </task>
     <servers />
   </component>
