@@ -33,6 +33,20 @@
     justify-content: center;
 }
 
+/* Battery Companion */
+.image_carousel .slide0 {
+    display: none;
+    justify-content: center;
+}
+
+.image_carousel .slide0 img {
+    margin: 1rem 1rem;
+    object-fit: contain;
+    max-height: auto;
+    max-width: 40%;
+}
+
+
 /* TradeBot */
 .image_carousel .slide1 {
     display: none;
@@ -104,5 +118,19 @@
 }
 
 .c_dot3.active, .c_dot3:hover {
+    background-color: var(--mainSecondaryColor);
+}
+
+.c_dot4 {
+    cursor: pointer;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: var(--textColor);
+    display: inline-block;
+    margin: 0 0.1rem;
+    border-radius: 50%;
+}
+
+.c_dot4.active, .c_dot4:hover {
     background-color: var(--mainSecondaryColor);
 }

@@ -1,10 +1,11 @@
-var slideIndex = [1, 1, 1];
-var slideId = ["slide1", "slide2", "slide3"]
-var dotId = ["c_dot1", "c_dot2", "c_dot3"]
+var slideIndex = [1, 1, 1, 1];
+var slideId = ["slide0", "slide1", "slide2", "slide3"]
+var dotId = ["c_dot1", "c_dot2", "c_dot3", "c_dot4"]
 
 displaySlides(1, 0);
 displaySlides(1, 1);
 displaySlides(1, 2);
+displaySlides(1, 3);
 
 function changeSlides(n, cIndex) {
     displaySlides(slideIndex[cIndex] += n, cIndex);
