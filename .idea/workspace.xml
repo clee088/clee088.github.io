@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe258bcc-8570-4f9d-a9dd-ca1b93bf40ff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/image-carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/image-carousel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/image-carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/image-carousel.js" afterDir="false" />
-    </list>
+    <list default="true" id="fe258bcc-8570-4f9d-a9dd-ca1b93bf40ff" name="Changes" comment="Battery Companion" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +49,7 @@
       <workItem from="1633630426240" duration="2000" />
       <workItem from="1633919681252" duration="87000" />
       <workItem from="1641519686456" duration="196000" />
-      <workItem from="1641931487992" duration="1406000" />
+      <workItem from="1641931487992" duration="1665000" />
     </task>
     <servers />
   </component>
